@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Open+Sans:wght@400;600;700&family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+
+--Blue: hsl(223, 87%, 63%);
+--Pale-Blue: hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brand-name{
+    margin-bottom: 2em;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 3em;
+    color: var(--Gray);
+    font-size:0.8rem;
+}
+.content h1{
+    font-weight: 400;
+
+}
+span{
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+p{
+    color: var(--Very-Dark-Blue);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 2em;
+    
+}
+.error{
+    color: var(--Light-Red);
+    font-weight: 400;
+    margin-top: 10px;
+}
+input{
+    width: 450px;
+    max-width: 55%;
+    border: 1px solid var(--Blue);
+    padding: 1.5em;
+    border-radius: 25px;
+    margin: 1em;
+    color: var(--Gray);
+    font-weight: 400;
+    font-size: 12px;
+}
+input:focus{
+outline: none;}
+
+button{
+    width: 650px;
+    max-width: 55%;
+    border: 1px solid var(--Blue);
+    padding: 1.2em;
+    border-radius: 25px;
+    background: var(--Blue);
+    color: #fff;
+    transition: 1s ease;
+    cursor: pointer;
+    box-shadow: 1px 4px 4px 2px var(--Pale-Blue);
+}
+button:hover{
+    background: var(--Pale-Blue);
+}
+.dashboard-img img{
+    width: 400px;
+    max-width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.fa-facebook-f,.fa-twitter,.fa-instagram{
+    border: 1px solid var(--Gray);
+    padding: 0.6em;
+    border-radius: 25px;
+    margin: 0.2em;
+    margin-top: 8em;
+    margin-bottom: 2em;
+    color: var(--Blue);
+}
+.copyright h5{
+    color: var(--Gray);
+    margin-bottom: 1em;
+    font-weight: 200;
+}
+@media(min-width:1440px){
+    form{
+        width: 100%;
+        display: inline-block;
+        
+        padding: 2em;
+        
+    }
+    .content{
+        font-size: 1.5rem;
+    }
+    input{
+        width:380px;
+    }
+    button{
+    width: 180px;
+    }
+    .dashboard-img img{
+        width: 800px;
+        height: 500px;
+        margin-top: 80px;
+    }
+}
